@@ -1,0 +1,186 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#ffd6e7;
+min-height:100vh;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#ffe6f0;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#ff3f7f;
+}
+
+nav a{
+margin:0 15px;
+cursor:pointer;
+color:#444;
+font-weight:500;
+}
+
+.back-btn{
+background:#ff3f7f;
+color:white;
+border:none;
+padding:10px 25px;
+border-radius:20px;
+cursor:pointer;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:80px;
+}
+
+.content h1{
+font-size:60px;
+color:#222;
+}
+
+.content p{
+margin:20px 0;
+color:#555;
+}
+
+.buttons button{
+padding:12px 30px;
+border-radius:30px;
+border:none;
+margin-right:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.primary{
+background:#ff3f7f;
+color:white;
+}
+
+.secondary{
+background:white;
+color:#ff3f7f;
+border:2px solid #ff3f7f;
+}
+
+.buttons button:hover{
+transform:scale(1.1);
+}
+
+.image img{
+  width:420px;
+  filter:drop-shadow(0px 30px 40px rgba(0,0,0,.25));
+  animation: fadeInRight 1s ease-out, floatDonut 4s ease-in-out infinite;
+}
+
+
+.menu{
+display:none;
+padding:60px;
+text-align:center;
+}
+
+.menu h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.menu-grid{
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+width:200px;
+cursor:pointer;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 30px rgba(0,0,0,.15);
+}
+
+.card img{
+width:120px;
+}
+.about, .contact{
+display:none;
+padding:80px;
+text-align:center;
+}
+
+.about h2, .contact h2{
+font-size:40px;
+color:#ff3f7f;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:700px;
+margin:10px auto;
+color:#555;
+line-height:1.6;
+}
+
+.contact-box{
+background:white;
+padding:40px;
+border-radius:20px;
+width:400px;
+margin:0 auto;
+box-shadow:0 20px 30px rgba(0,0,0,.15);
+}
+
+.contact-box p{
+margin:15px 0;
+}
+@keyframes floatDonut {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes floatDecor {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.strawberry, .leaf{
+animation: floatDecor 3s ease-in-out infinite;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Donut Landing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">🍩 Donut</div>
+  <nav>
+   <nav>
+  <a onclick="showHome()">Home</a>
+  <a onclick="showMenu()">Menu</a>
+  <a onclick="showAbout()">About</a>
+  <a onclick="showContact()">Contact</a>
+</nav>
+
+  </nav>
+  <button class="back-btn" onclick="showHome()">Back</button>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="content">
+    <h1>Strawberry Donut</h1>
+    <p>Donat lembut dengan glaze strawberry manis dan topping segar.</p>
+    <div class="buttons">
+      <button class="primary" onclick="orderNow()">Order Now</button>
+      <button class="secondary" onclick="showMenu()">View Menu</button>
+    </div>
+  </div>
+
+  <div class="image">
+    <img id="heroDonut" src="images/donut.png">
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu">
+  <h2>Our Donuts</h2>
+
+  <div class="menu-grid">
+    <div class="card" onclick="changeDonut('pink')">
+      <img src="images/pink.png">
+      <p>Strawberry Pink</p>
+    </div>
+
+    <div class="card" onclick="changeDonut('blue')">
+      <img src="images/blue.png">
+      <p>Blue Berry</p>
+    </div>
+
+    <div class="card" onclick="changeDonut('choco')">
+      <img src="images/coklat.png">
+      <p>Chocolate</p>
+    </div>
+  </div>
+</section>
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Donut</h2>
+  <p>
+    Donut adalah toko donat modern yang menghadirkan rasa lembut, manis,
+    dan topping segar dengan tampilan menarik.  
+    Kami fokus pada kualitas, rasa, dan desain visual yang menggugah selera.
+  </p>
+
+  <p>
+    Setiap donat dibuat dari adonan premium, glaze lembut,
+    dan topping pilihan seperti strawberry, coklat, dan blueberry.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-box">
+    <p><strong>📍 Address:</strong> Donut Street No. 21, Sweet City</p>
+    <p><strong>📞 Phone:</strong> 0812-3456-7890</p>
+    <p><strong>📧 Email:</strong> donutshop@gmail.com</p>
+
+    <button class="primary" onclick="alert('Pesan terkirim!')">
+      Send Message
+    </button>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
